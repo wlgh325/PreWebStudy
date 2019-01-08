@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>grid design</title>
+      <style>
+         #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 1fr; /* 첫번째 영역은 150px로 하고 다른 영역은 나머지를 차지한다(1fr)*/
+         }
+         div {
+            border: 5px solid gray;
+         }
+         #grid2 {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 첫번째와 2번째 element의 비율을 2:1로 한다*/
+         }
+      </style>
+   </head>
+   <body>
+   <div id = "grid">
+      <div>Navigation</div>
+      <div>Article</div>
+   </div>
+   <br>
+   <div id="grid2">
+      <div>Navigation2</div>
+      <div>Article2</div>
+   </div>
+   </body>
+</html>
