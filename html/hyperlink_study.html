@@ -1,51 +1,61 @@
-<meta charset="utf-8">
-<h1>하이퍼링크</h1>
-<div id="top"> </div>
-<h2 style="margin-top:40px">하이퍼링크 사용하기</h2>
-<h3>a 태그</h3> <hr>
-<p> a태그는 링크를 만드는 태그이며 많이 사용되는 태그중 하나이다
-  <br> a는 anchor(닻)의 약자로서 기본문법은 아래와 같다
-  <br> <strong>&lta href=&quotaddress&quot&gtLabel&lt/a&gt</strong>
-  <br> hre속성을 사용하여 연결할 주소를 지정할 수 있다(hypertext reference)
-  <br> href 속성 값에 웹페이지, 이미지, 동영상, 파일 등의 주소를 넣을 수 있다.( 웹브라우저의 설정에 따라 다르다 ) <strong>따옴표를 반드시 사용한다</strong>
-  <br> Label은 표시할 텍스트를 의미한다. <br>
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <titl> HTML 하이퍼링크 정리</titl>
+    <meta charset="utf-8">
 
-<br><br><h3> target 속성</h3> <hr>
-<p> target속성은 링크를 어디에서 열지 결정한다. traget 속성의 값으로 넣을 수 있는 값은 다음과 같다
-  <!-- 목록은 li태그를 이용하여 작성한다 -->
-  <!-- 다른 목록과 구분할 수 있도록 ul태그 안에 작성-->
-  <!-- ul태그는 unordered list의 약자로 번호가 붙지 않는다 -->
-  <!-- ol태그는 ordered list의 약자로 번호가 자동으로 붙는다 -->
-  <ol>
-    <li> _self: 기본값으로 현재 페이지에서 링크 처리 </li>
-    <li>_blank: 새창 또는 새탭에서 링크 처리 </li>
-    <li> _parent, _top: 웹페이지를 frameset으로 구성했을때 사용 </li>
-  </ol>
-  <br> _self속성 적용(현재 페이지에서 열기) <a href="https://blog.naver.com/wlgh325" target="_self">hoho의 블로그</a>
-  <br> _blank속성 적용(새로운 탭에서 열기) <a href="https://blog.naver.com/wlgh325" target="_blank">hoho의 블로그</a>
-</p>
+  </head>
+  <body>
+    <h1>하이퍼링크</h1>
+    <div id="top"> </div>
+    <h2 style="margin-top:40px">하이퍼링크 사용하기</h2>
+    <h3>a 태그</h3> <hr>
+    <p> a태그는 링크를 만드는 태그이며 많이 사용되는 태그중 하나이다
+      <br> a는 anchor(닻)의 약자로서 기본문법은 아래와 같다
+      <br> <strong>&lta href=&quotaddress&quot&gtLabel&lt/a&gt</strong>
+      <br> hre속성을 사용하여 연결할 주소를 지정할 수 있다(hypertext reference)
+      <br> href 속성 값에 웹페이지, 이미지, 동영상, 파일 등의 주소를 넣을 수 있다.( 웹브라우저의 설정에 따라 다르다 ) <strong>따옴표를 반드시 사용한다</strong>
+      <br> Label은 표시할 텍스트를 의미한다. <br>
+    </p>
 
-<br><br><h3> download 속성</h3> <hr>
-<p> download를 추가하면 웹브라우저의 속성에 상관없이 링크대상을 다운로드 한다
-  <br> &lta href=&quotaddress&quot <strong>download</strong> &gtLabel&lt/a&gt
-  <br> 위에처럼 하면 링크를 눌렀을때 다운로드가 된다.
-</p>
+    <br><br><h3> target 속성</h3> <hr>
+    <p> target속성은 링크를 어디에서 열지 결정한다. traget 속성의 값으로 넣을 수 있는 값은 다음과 같다
+      <!-- 목록은 li태그를 이용하여 작성한다 -->
+      <!-- 다른 목록과 구분할 수 있도록 ul태그 안에 작성-->
+      <!-- ul태그는 unordered list의 약자로 번호가 붙지 않는다 -->
+      <!-- ol태그는 ordered list의 약자로 번호가 자동으로 붙는다 -->
+      <ol>
+        <li> _self: 기본값으로 현재 페이지에서 링크 처리 </li>
+        <li>_blank: 새창 또는 새탭에서 링크 처리 </li>
+        <li> _parent, _top: 웹페이지를 frameset으로 구성했을때 사용 </li>
+      </ol>
+      <br> _self속성 적용(현재 페이지에서 열기) <a href="https://blog.naver.com/wlgh325" target="_self">hoho의 블로그</a>
+      <br> _blank속성 적용(새로운 탭에서 열기) <a href="https://blog.naver.com/wlgh325" target="_blank">hoho의 블로그</a>
+    </p>
 
-<br><br><h3> 문서 내 특정 위치로의 링크</h3> <hr>
-<p> href 속성의 값 앞에 #을 붙이면 해당 id를 가진 요소로 이동할 수 있다.
-    <br> &lta href=&quot<strong>#</strong>tag1&quot&gtLabel&lt/a&gt
-    <br> 위 처럼 작성하게 되면 id의 속성값으로 tag1을 갖는 요소로 이동하게 된다.
-    <br> 아래는 id를 이용하여 맨 위로 이동할 수 있게 링크를 작성하였다 클릭해보자
-    <br> <a href="#top">맨 위로 이동</a>
-</p>
+    <br><br><h3> download 속성</h3> <hr>
+    <p> download를 추가하면 웹브라우저의 속성에 상관없이 링크대상을 다운로드 한다
+      <br> &lta href=&quotaddress&quot <strong>download</strong> &gtLabel&lt/a&gt
+      <br> 위에처럼 하면 링크를 눌렀을때 다운로드가 된다.
+    </p>
 
-<br><br><h3> title 속성</h3> <hr>
-<p>
-  <p>&nbsp</p>
-  <p>title속성은 해당 링크에 마우스를 가져다 대면 링크에 대한 설명을 표시해준다.</p>
-  <p> 사용법은 아래와 같다</p>
-  <p> &lta href=&quotaddress&quot <strong>title=&quot this is my blog&quot</strong>&gtLabel&lt/a&gt</p>
-  <p> 다음 링크에 마우스를 가져다대보자</p>
-  <p> <a href="https://blog.naver.com/wlgh325" title="this is my blog">hoho의 블로그</a> </p>
-</p>
+    <br><br><h3> 문서 내 특정 위치로의 링크</h3> <hr>
+    <p> href 속성의 값 앞에 #을 붙이면 해당 id를 가진 요소로 이동할 수 있다.
+        <br> &lta href=&quot<strong>#</strong>tag1&quot&gtLabel&lt/a&gt
+        <br> 위 처럼 작성하게 되면 id의 속성값으로 tag1을 갖는 요소로 이동하게 된다.
+        <br> 아래는 id를 이용하여 맨 위로 이동할 수 있게 링크를 작성하였다 클릭해보자
+        <br> <a href="#top">맨 위로 이동</a>
+    </p>
+
+    <br><br><h3> title 속성</h3> <hr>
+    <p>
+      <p>&nbsp</p>
+      <p>title속성은 해당 링크에 마우스를 가져다 대면 링크에 대한 설명을 표시해준다.</p>
+      <p> 사용법은 아래와 같다</p>
+      <p> &lta href=&quotaddress&quot <strong>title=&quot this is my blog&quot</strong>&gtLabel&lt/a&gt</p>
+      <p> 다음 링크에 마우스를 가져다대보자</p>
+      <p> <a href="https://blog.naver.com/wlgh325" title="this is my blog">hoho의 블로그</a> </p>
+    </p>
+
+  </body>
+</html>
