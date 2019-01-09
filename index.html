@@ -14,23 +14,32 @@
   </head>
 
   <body>
-    <div id="main_container">
+    <div class="main_container">
       <!-- div tag는 디자인 목적을 위한 tag로 block level element이다 -->
       <!-- span은 div 처럼 디자인 목적을 위한 tag로 inline element이다 -->
-      <div class="main_top">
+      <div id="main_top">
          <h1> <a href="index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1>
          <img src="./image/main.PNG" width="20%">
          <br> <input type="button" name="btn1" value="한 번만 눌러주세요!! Please!!" onclick="alert('그런다고 클릭하니 ㅎㅎㅎㅎㅎㅎ 착하네')"> <hr>
       </div>
-      <h2>  HTML study list </h2>
-      <div class="list_main">
-        <ol>
-           <!-- style 속성을 사용하여 CSS를 삽입 -->
-           <!-- class를 이용하여 grouping -->
-           <li> <a href="html/html_basic_tag.html" target="_self"> html tag의 기본</a> </li>
-           <li> <a href="html/hyperlink_study.html" target="_self">html 링크 사용하기</a> </li>
-           <li> <a href="html/html_structure.html" target="_self">html의 구조 만들기</a> </li>
-        </ol>
+      <div id="contents">
+        <h2>  HTML study list </h2>
+        <div class="list_main">
+          <ol>
+             <!-- style 속성을 사용하여 CSS를 삽입 -->
+             <!-- class를 이용하여 grouping -->
+             <li> <a href="html/html_basic_tag.html" class="list_link" target="_self"> html tag의 기본</a> </li>
+             <li> <a href="html/hyperlink_study.html" class="list_link" target="_self">html 링크 사용하기</a> </li>
+             <li> <a href="html/html_structure.html" class="list_link" target="_self">html의 구조 만들기</a> </li>
+             <li> <a href="html/javascript_exam.html" class="list_link" target="_self">자바스크립트 따라하기</a> </li>
+          </ol>
+        </div>
+      </div>
+      <div class="visitor">
+        <h2>방명록</h2>
+        <input type="text" size="100">
+        <input type="submit" value="방명록 남기기">
+
       </div>
     </div>
   </body>
