@@ -1,14 +1,123 @@
-body {
-   background-color: #ddd;
+
+/*
+class selector는 .을 이용하여 표시한다
+class selector는 id selector보다는 낮고 tag선택자보다 높다 \
+*/
+
+/* tag selector */
+body{
+  margin: 0;
 }
 
-.box {
-   background-color: white:;
-   width: 960px;
-   margin-left:  auto;
-   margin-right: auto;
+a {
+   color:black;
+   text-decoration: none;
 }
 
-.box h1{
-   color: orangered;
+p {
+  margin-top : 20px;
 }
+
+h1 {
+   font-size:45px;
+   text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+/* id selector는 #을 이용하여 표시한다
+id selector는 class selector보다 더 높은 우선순위를 갖는다 */
+/* 기본 링크 상태 */
+a:link {
+   color: black;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+/* 방문한 링크 상태 */
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* 링크를 마우스로 클릭한 순간 */
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* 마우스를 링크에 가져다 댔을때 */
+a:hover{
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* id selector */
+#saw {
+  color: red;
+}
+
+#grid {
+   display: grid;
+   grid-template-columns: 210px 1fr;
+}
+
+#main_container {
+  width: 1080px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* class selector */
+.main_top {
+   text-align: center;
+}
+
+
+.list_main {
+  align-items: : center;
+}
+
+.list {
+  margin-top: 40px;
+  border-right: 1px solid gray;
+  width: 150px;
+  margin: 0;
+  padding: 20px;
+}
+
+.list_2 {
+  border: 0
+  width: 200px;
+}
+
+@media (max-width: 480px){
+  #main_container{
+    width: auto;
+  }
+  #grid {
+    display : block;
+  }
+  .list {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 150px;
+  }
+}
+/* 모두 똑같은 형태의 선택자라면 가장 밑의 selector의 영향을 받는다 */

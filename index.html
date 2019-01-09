@@ -6,53 +6,32 @@
 <html>
   <!-- 본문을 설명하는 태그 -->
   <!-- 본문을 설명하는 태그는 head로 표시한다 -->
-   <head>
-      <title>HTML study list</title>
-      <meta charset="utf-8">
+  <head>
+    <title>HTML study list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
 
-         <!-- style태그를 사용하여 a 태그의 색깔을 모두 red로 함-->
-         <!-- selector 사용 -->
-         <style charset="utf-8">
-            a {
-               color:black;
-               text-decoration: none;
-            }
-            h1 {
-               font-size:45px;
-               text-align: center;:
-            }
-            /* .을 붙여서 class가 saw인 tag를 가리키닌 selector */
-            .saw {
-               color: gray;
-            }
-            ol {
-               border-right:1px solid gray;
-               width: 200px;
-               margin: 0;
-               padding: 20px;
-            }
-            .main_top {
-               text-align: center;
-            }
-         </style>
-   </head>
-
-   <body>
+  <body>
+    <div id="main_container">
       <!-- div tag는 디자인 목적을 위한 tag로 block level element이다 -->
       <!-- span은 div 처럼 디자인 목적을 위한 tag로 inline element이다 -->
       <div class="main_top">
-         <h1> <a href="index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1> <hr>
+         <h1> <a href="index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1>
          <img src="./image/main.PNG" width="20%">
          <br> <input type="button" name="btn1" value="한 번만 눌러주세요!! Please!!" onclick="alert('그런다고 클릭하니 ㅎㅎㅎㅎㅎㅎ 착하네')"> <hr>
       </div>
       <h2>  HTML study list </h2>
-      <ol style="margin-top:40px">
-         <!-- style 속성을 사용하여 CSS를 삽입 -->
-         <!-- class를 이용하여 grouping -->
-         <li> <a href="html/html_basic_tag.html" class="saw" target="_self"> html tag의 기본</a> </li>
-         <li> <a href="html/hyperlink_study.html" class="saw" target="_self">html 링크 사용하기</a> </li>
-         <li> <a href="html/html_structure.html" target="_self">html의 구조 만들기</a> </li>
-      </ol>
-
+      <div class="list_main">
+        <ol>
+           <!-- style 속성을 사용하여 CSS를 삽입 -->
+           <!-- class를 이용하여 grouping -->
+           <li> <a href="html/html_basic_tag.html" target="_self"> html tag의 기본</a> </li>
+           <li> <a href="html/hyperlink_study.html" target="_self">html 링크 사용하기</a> </li>
+           <li> <a href="html/html_structure.html" target="_self">html의 구조 만들기</a> </li>
+        </ol>
+      </div>
+    </div>
   </body>
 </html>

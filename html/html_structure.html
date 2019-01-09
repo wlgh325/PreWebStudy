@@ -9,68 +9,42 @@
    <head>
       <title> HTML structure study</title>
       <meta charset="utf-8">
-      <style charset="utf-8">
-         a {
-            color:black;
-            text-decoration: none;
-         }
-         h1 {
-            font-size:45px;
-            text-align: center;
-         }
-         .active {
-            color: red;
-         }
-         .main_top {
-            text-align: center;
-         }
-         ol {
-            border-right:1px solid gray;
-            width: 150px;
-            margin: 0;
-            padding: 20px;
-         }
-         #grid {
-            display : grid;
-            grid-template-columns: 210px 1fr;
-         }
-      </style>
+      <link rel="stylesheet" href="../CSS/style.css">
    </head>
 
 
   <body>
     <!-- 본문 -->
     <!-- 본문은 body태그로 표시한다 -->
-    <div class="main_top">
-      <h1> <a href="../index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1> <hr>
-      <img src="../image/main.PNG" width="20%">
-      <h1> html의 구조만들기</h1>
-    </div>
-
-   <div id = "grid">
-      <ol style="margin-top:40px">
-        <!-- style 속성을 사용하여 CSS를 삽입 -->
-        <li> <a href="./html_basic_tag.html" target="_self"> html tag의 기본</a> </li>
-        <li> <a href="./hyperlink_study.html" target="_self">html 링크 사용하기</a> </li>
-        <li> <a href="./html_structure.html" class="active" target="_self">html의 구조 만들기</a> </li>
-      </ol>
-      <div>
-         <h2> title 태그</h2> <hr>
-         <p> title 태그룰 이용하여 페이지를 띄웠을때 제목을 바꿔줄 수 있다.
-           <br> 검색엔진이 웹페이지를 분석할 때 가자 중요하게 생각하는 태그중 하나이기 때문에 써주는게 좋다
-           <br> <strong>ex) &lttitle&gt HTML structure study &lt/title&gt</strong>
-         </p>
-
-         <h2> meta tag</h2> <hr>
-         <p> meta태그를 이용하여 인코딩 정보를 맞춰줄 수 있다
-           <br> html파일을 utf-8 인코딩 형식으로 작성하였다면 웹 브라우저가 열때도
-           <br> utf-8로 열어달라고 이야기 해야한다. 그렇지 않으면 쓰여진 방식대로 읽지 않아서 글자가 깨질 수 있다.
-           <br> 그럴때 meta태그를 이용한다. 다음과 같이 사용하면 된다
-           <br> <strong>&ltmeta charset=&quotutf-8&quot&gt</strong>
-         </p>
-
+    <div id="main_container">
+      <div class="main_top">
+        <h1> <a href="../index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1> <hr>
+        <img src="../image/main.PNG" width="20%">
+        <h2> 3. html의 구조만들기</h2>
       </div>
-   </div>
-  </body>
 
+     <div id = "grid">
+        <ol class="list">
+          <!-- style 속성을 사용하여 CSS를 삽입 -->
+          <li> <a href="./html_basic_tag.html" target="_self"> html tag의 기본</a> </li>
+          <li> <a href="./hyperlink_study.html" target="_self">html 링크 사용하기</a> </li>
+          <li> <a href="#" id="saw" target="_self">html의 구조 만들기</a> </li>
+        </ol>
+        <ol>
+          <h3> <li> title 태그 </li> </h3> <hr>
+          <p> title 태그룰 이용하여 페이지를 띄웠을때 제목을 바꿔줄 수 있다.
+            <br> 검색엔진이 웹페이지를 분석할 때 가자 중요하게 생각하는 태그중 하나이기 때문에 써주는게 좋다
+            <br> <strong>ex) &lttitle&gt HTML structure study &lt/title&gt</strong>
+          </p>
+          <h3> <li> meta 태그</li> </h3> <hr>
+          <p> meta태그를 이용하여 인코딩 정보를 맞춰줄 수 있다
+            <br> html파일을 utf-8 인코딩 형식으로 작성하였다면 웹 브라우저가 열때도
+            <br> utf-8로 열어달라고 이야기 해야한다. 그렇지 않으면 쓰여진 방식대로 읽지 않아서 글자가 깨질 수 있다.
+            <br> 그럴때 meta태그를 이용한다. 다음과 같이 사용하면 된다
+            <br> <strong>&ltmeta charset=&quotutf-8&quot&gt</strong>
+          </p>
+        </ol>
+     </div>
+    </div>
+  </body>
 </html>
