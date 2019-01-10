@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <title> 예제해보기</title>
-  </head>
-    <script src="../JavaScript/myScript.js"></script>
-  </head>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../CSS/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+      <title> 예제해보기</title>
+   </head>
 
-  <body>
-    <h2>External JavaScript</h2>
-    <p id="demo">A Paragraph.</p>
-    <button type="button" onclick="myFunction()">Try it</button>
-    <p>(myFunction is stored in an external file called "myScript.js")</p>
-  </body>
+   <body>
+      <div id="app">
+         <child-component></child-component>
+      </div>
+      <div id = "app2"></div>
+      <script src="../JavaScript/vue2.js"></script>
+
+   </body>
 </html>
