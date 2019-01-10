@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title> 자바스크립트 따라하기</title>
+  </head>
+  <body>
+  <div class="main_container">
+    <div class="main_top">
+      <h1> <a href="../index.html" target="_self">Vue.js 공부를 위한 웹사이트 </a> </h1> <hr>
+    </div>
+    <div id= "grid">
+      <ul class="list">
+        <li> <a href="./html_basic_tag.html" target="_self"> html tag의 기본</a> </li>
+        <li> <a href="./hyperlink_study.html" target="_self">html 링크 사용하기</a> </li>
+        <li> <a href="./html_structure.html" target="_self">html의 구조 만들기</a> </li>
+        <li> <a href="html/#" id="saw" target="_self">자바스크립트 따라하기</a> </li>
+      </ul>
+      <div id = "contents">
+        <ol id = "contents_list">
+          <h2> <li> Script tag 사용하기</li></h3>
+            <ol>
+              <h3> <li> script tag</li></h3> <hr>
+              <p> script tag를 이용하 앞에서 배운 속성을 사용할 수 있다. 따로 script태그를 두어서 구별하기 편하다는 장점이 있다.
+              <br> script tag는 body와 head 부분에 위치하며 두군데 모두 위치할 수 있다.
+              <br> 하지만 tag를 사용할때 지정할 id보다 태그가 밑에 있어야 하므로 태그를 제일 하단에 두는것이 좋다</p>
+              <div class ="exam_box">
+                <h3>Example</h3>
+                <div class="code_box">
+                  <span><strong> &ltscript&gt</strong></span>
+                  <br>
+                  <span style="color:black">
+                  onclick='document.
+                  <span style="color:brown">getElementById</span>
+                  ("change_text").
+                  <span style="color:brown">innerHTML</span>
+                  = "Change Text!!"';
+                  <br>
+                  <span> <strong> &lt/script&gt</strong></span>
+                  </span>
+                </div>
+                <p id="change_Text"style="font-size:15px; display:inline">before changing text</p>
+                <input class="btn_margin_bottom" type="button" name="btn_changeText" value="change Text" onclick='document.getElementById("change_Text").innerHTML = "Change Text!!"'>
+              </div>
+
+              <h3> <li> function 이용하기</li></h3> <hr>
+              <p> 똑같이 style태그를 이용하려고 한다. 하지만 이번에는 script 태그를 head에 위치시켜 function을 이용해서 함수를 불러다 쓰려고한다.
+              <br> 함수를 쓰지 않으면 사용하려는 태그의 밑에 script 태그가 위치해야만 동작하지만 이렇게 하면 어디에 위치하건 사용가능하다
+              <br> 예시는 head에서 사용하는걸 했지만 body에 script 태그를 두고 function을 만들어서 사용할 수 있다.</p>
+              <div class ="exam_box">
+                <h3>Example</h3>
+                <div class="code_box">
+                  <span style="color:black">
+                  <span style="color:mediumblue"><</span>
+                  head
+                  <span style="color:mediumblue">></span>
+                  <br>
+                  <span> <strong> &ltscript&gt</strong></span>
+                  <br>
+                  <span>function myFunctoin() {</span>
+                  <br> &nbsp;&nbsp;document.
+                  <span style="color:brown">getElementById</span>
+                  ("change_text").
+                  <span style="color:brown">innerHTML</span>
+                  = "Change Text!!";
+                  <br>
+                  <span> <strong> &lt/script&gt</strong></span>
+                  <br>
+                  <span style="color:mediumblue">&lt/</span>
+                  head
+                  <span style="color:mediumblue">></span>
+
+                  <p>
+                  <span> &ltbody&gt </span>
+                  <br>
+                  <span> &ltp id="demo"&gtA Paragraph&lt/p&gt </span>
+                  <br>
+                  <span> &ltinput type="button" <strong>onclick="myFunction()"</strong>&gtTry it&lt/input&gt </span>
+                  <br>
+                  <span> &ltbody&gt </span>
+                  </p>
+                  </span>
+                </div>
+              </div>
+            </ol>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>
