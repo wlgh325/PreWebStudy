@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue_proj
 
 > First vue project
@@ -28,3 +29,7 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+
+https://wlgh325.github.io/Vue.js_Study/#/
+>>>>>>> 2484a03cefdf3b8690d00071fad834afb9258b6d
